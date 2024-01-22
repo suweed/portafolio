@@ -18,7 +18,7 @@
 html,
 body {
   font-family: Girlfriend, "Roslindale Display Condensed", serif;
-  background-color: #c6d5c6;
+  background-color: #C7CFC7;
 }
 
 .nav {
@@ -60,7 +60,7 @@ body {
 }
 
 .inner .page {
-  background-color: #c6d5c6;
+  background-color: #C7CFC7;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -81,6 +81,16 @@ body {
   justify-content: center;
   align-items: center;
   gap: 3%;
+  background-color: #C7CFC7;
+}
+
+.inner .page .content-page.home .level3D {
+  position: fixed;
+  top: 10%;
+  left: 0;
+  background-color: #C7CFC7;
+  width: 100vw;
+  height: 80vh;
 }
 
 .inner .page .content-page.about {
@@ -156,7 +166,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #c6d5c6;
+  background-color: #C7CFC7;
   width: 100vw;
   height: 100vh;
   z-index: 99;
