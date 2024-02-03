@@ -1,26 +1,24 @@
-import * as THREE from "three"
 import React from "react";
-import Backflip from "../Transitions/Backflip";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { InkText } from "./InkText";
 import { Canvas } from "@react-three/fiber";
-import {  OrbitControls, useTexture } from '@react-three/drei'
-import { Physics, useSphere } from "@react-three/cannon"
-import { useFrame, useThree } from "@react-three/fiber"
-import Aquarium from "./Uplevel/Aquarium";
-
-const rfs = THREE.MathUtils.randFloatSpread
-const sphereGeometry = new THREE.SphereGeometry(1, 32, 32)
-const baubleMaterial = new THREE.MeshStandardMaterial({ color: "white", roughness: 0, envMapIntensity: 1 })
+import { Environment, Lightformer, OrbitControls } from '@react-three/drei'
+import { useTranslation } from "react-i18next";
+import Backflip from "../Transitions/Backflip";
+import { InkText } from "./InkText";
+import Aquarium from "./Uplevel/Aquerium";
+import useLocalStorage from "use-local-storage";
 
 const Home = () => {
+
+    const { t } = useTranslation();
+    const [isDark] = useLocalStorage('isDark', false);
 
     return (
         <div>
             <div className="content-page home">
                 <div className="level3D">
-                    <Canvas camera={{ position: [0, 150, 0], fov: 6 }} shadows>
+                    <Canvas camera={{ position: [0, 150, 0], fov: 7 }} shadows>
                         <OrbitControls enableZoom={false} minPolarAngle={Math.PI / 2} maxPolarAngle={Math.PI / 2} minAzimuthAngle={0} maxAzimuthAngle={0}  />
                         <ambientLight />
                         <directionalLight
@@ -33,15 +31,18 @@ const Home = () => {
                             shadow-camera-left={-20}
                             shadow-camera-bottom={-20}
                         />
-                        <color attach="background" args={['#c6d5c6']} />
-                        <group position={[0, 0, 0]}>
-                            <Physics gravity={[0, 2, 0]} iterations={10}>
-                                <Pointer />
-                                <Clump image="images/react.png" />
-                                <Clump image="images/magento.png" />
-                            </Physics>
-                        </group>
-                        <Aquarium />
+                        <color attach="background" args={[isDark ? '#1e1e1e' : '#c6d5c6']} />
+                        <Aquarium rotation={[Math.PI / 2.5, 0, 0]} />
+                        <Environment resolution={1024}>
+                            <group rotation={[-Math.PI / 3, 0, 0]}>
+                            <Lightformer intensity={4} rotation-x={Math.PI / 2} position={[0, 5, -9]} scale={[10, 10, 1]} />
+                            {[2, 0, 2, 0, 2, 0, 2, 0].map((x, i) => (
+                                <Lightformer key={i} form="circle" intensity={4} rotation={[Math.PI / 2, 0, 0]} position={[x, 4, i * 4]} scale={[4, 1, 1]} />
+                            ))}
+                            <Lightformer intensity={2} rotation-y={Math.PI / 2} position={[-5, 1, -1]} scale={[50, 2, 1]} />
+                            <Lightformer intensity={2} rotation-y={-Math.PI / 2} position={[10, 1, 0]} scale={[50, 2, 1]} />
+                            </group>
+                        </Environment>
                     </Canvas>
                 </div>
                 <motion.h1
@@ -49,7 +50,7 @@ const Home = () => {
                     initial={{y: "0vh", x: "-100vw"}}
                     animate={{y: "0vh", x: "0vw"}}
                     exit={{y: "0vh", x: "100vw"}}
-                    transition={{ duration: .3, ease: 'easeOut'}}
+                    transition={{ duration: 1.3, ease: 'easeOut'}}
                 >
                     <InkText />
                 </motion.h1>
@@ -58,9 +59,9 @@ const Home = () => {
                     initial={{y: "0vh", x: "100vw"}}
                     animate={{y: "0vh", x: "0vw"}}
                     exit={{y: "0vh", x: "-100vw"}}
-                    transition={{ duration: .3, ease: 'easeOut'}}
+                    transition={{ duration: 1.3, ease: 'easeOut'}}
                 >
-                    Developer
+                    {t('home.developer')}
                 </motion.h1>
             </div>
             <div className="options-section">
@@ -72,7 +73,7 @@ const Home = () => {
                     transition={{ duration: .5, ease: 'easeOut'}}
                 >
                     <Link className="nav-link" to="/contact">
-                        Contact
+                        {t('main.contact')}
                     </Link>
                 </motion.div>
                 <motion.div
@@ -83,38 +84,12 @@ const Home = () => {
                     transition={{ duration: .5, ease: 'easeOut'}}
                 >
                     <Link className="nav-link" to="/about">
-                        About
+                        {t('main.about')}
                     </Link>
                 </motion.div>
             </div>
         </div>
     );
 };
-
-function Clump({ mat = new THREE.Matrix4(), vec = new THREE.Vector3(), ...props }) {
-    // const { outlines } = useControls({ outlines: { value: 0.0, step: 0.01, min: 0, max: 0.05 } })
-    const texture = useTexture(props.image)
-    const [ref, api] = useSphere(() => ({ args: [1], mass: 1, angularDamping: 0.1, linearDamping: 0.65, position: [rfs(20), rfs(20), rfs(20)] }))
-    useFrame((state) => {
-    //   for (let i = 0; i < 1; i++) {
-        // Get current whereabouts of the instanced sphere
-        ref.current.getMatrixAt(0, mat)
-        // Normalize the position and multiply by a negative force.
-        // This is enough to drive it towards the center-point.
-        api.at(0).applyForce(vec.setFromMatrixPosition(mat).normalize().multiplyScalar(-40).toArray(), [0, 0, 0])
-    //   }
-    })
-    return (
-      <instancedMesh ref={ref} castShadow receiveShadow args={[sphereGeometry, baubleMaterial, 1]} material-map={texture}>
-        {/* <Outlines thickness={outlines} /> */}
-      </instancedMesh>
-    )
-}
-
-function Pointer() {
-    const viewport = useThree((state) => state.viewport)
-    const [, api] = useSphere(() => ({ type: "Kinematic", args: [3], position: [0, 0, 0] }))
-    return useFrame((state) => api.position.set((state.mouse.x * viewport.width) / 2, (state.mouse.y * viewport.height) / 2, 0))
-}
 
 export default Backflip(Home);

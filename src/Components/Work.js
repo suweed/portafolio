@@ -1,22 +1,35 @@
 import React from "react";
-import Backflip from "../Transitions/Backflip";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import Backflip from "../Transitions/Backflip";
+import Gallery from "./Uplevel/Gallery";
 
 const Work = () => {
 
+    const { t } = useTranslation();
+    const widthScreenMobile = window.innerWidth < 480;
+
     return (
-        <div>
+        <div className="container-work">
             <div className="content-page work">
                 <motion.h1
                     className="title-page"
-                    initial={{y: "0vh", x: "100vw"}}
-                    animate={{y: "0vh", x: "0vw"}}
-                    exit={{y: "0vh", x: "-100vw"}}
-                    transition={{ duration: .3, ease: 'easeOut'}}
+                    initial={{y: widthScreenMobile ? "-43vh" : "-40vh", x: "100vw"}}
+                    animate={{y: widthScreenMobile ? "-43vh" : "-40vh", x: "0vw"}}
+                    exit={{y: widthScreenMobile ? "-43vh" : "-40vh", x: "-100vw"}}
+                    transition={{ duration: 1.3, ease: 'easeOut'}}
                 >
-                    Work
+                    {t('work.experience')}
                 </motion.h1>
+                <div className="content-gallery">
+                    <Gallery />
+                </div>
+                <div className="desc-selection" >
+                    <div className="name-experience"></div>
+                    <div className="desc-experience"></div>
+                </div>
+                <input type="hidden" className="desc-selection-input" name="desc-selection" readOnly />
             </div>
             <div className="options-section">
                 <motion.div
@@ -27,7 +40,7 @@ const Work = () => {
                     transition={{ duration: .5, ease: 'easeOut'}}
                 >
                     <Link className="nav-link" to="/about">
-                        About
+                        {t('main.about')}
                     </Link>
                 </motion.div>
                 <motion.div
@@ -38,7 +51,7 @@ const Work = () => {
                     transition={{ duration: .5, ease: 'easeOut'}}
                 >
                     <Link className="nav-link" to="/contact">
-                        Contact
+                        {t('main.contact')}
                     </Link>
                 </motion.div>
             </div>

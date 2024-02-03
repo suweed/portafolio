@@ -2,7 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #0f0f0f;
+  color: var(--primary-text-color);
+}
+
+*::selection {
+  background-color: transparent;
+  color: #683C11;
 }
 
 @font-face {
@@ -15,10 +20,20 @@
   src: local('Girlfriend'), url("./assets/fonts/Girlfriend.ttf") format('truetype');
 }
 
+@font-face {
+  font-family: 'Bernardo';
+  src: local('Bernardo'), url("./assets/fonts/Bernardo Moda contrast.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Gogh';
+  src: local('Gogh'), url("./assets/fonts/Gogh-ExtraBold.otf") format('opentype');
+}
+
 html,
 body {
   font-family: Girlfriend, "Roslindale Display Condensed", serif;
-  background-color: #C7CFC7;
+  background-color: var(--background-color);
 }
 
 .nav {
@@ -35,9 +50,36 @@ body {
 
 .logo,
 .nav-item {
-  margin: 2em;
-  font-weight: 400;
+  font-weight: 200;
   font-size: 1.5vw;
+  margin: 1em 2em 1.5em 1em;
+}
+
+.nav-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.nav-item .nav-toggle {
+  position: relative;
+  right: 60%;
+}
+
+.nav-item .lang-btn {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.nav-item .lang-btn.en {
+  border-right: 1px solid #000;
+  padding-right: 17%;
+}
+
+.nav-item .lang-btn.active {
+  font-weight: 700;
 }
 
 .inner {
@@ -60,7 +102,7 @@ body {
 }
 
 .inner .page {
-  background-color: #C7CFC7;
+  background-color: var(--background-color);
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -76,21 +118,17 @@ body {
   height: 90vh;
   position: relative;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
   gap: 3%;
-  background-color: #C7CFC7;
+  background-color: var(--background-color);
 }
 
 .inner .page .content-page.home .level3D {
   position: fixed;
   top: 10%;
   left: 0;
-  background-color: #C7CFC7;
+  background-color: var(--background-color);
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
 }
 
 .inner .page .content-page.about {
@@ -98,17 +136,105 @@ body {
   height: 90vh;
   position: relative;
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
+  align-items: center;
+  gap: 3%;
+  background-color: var(--background-color);
+}
+
+.inner .page .content-page.about h1{
+  font-family: 'Gogh';
+}
+
+.inner .page .content-page.about .level3D {
+  position: fixed;
+  top: 10%;
+  left: 0;
+  background-color: var(--background-color);
+  width: 100vw;
+  height: 80vh;
+}
+
+.inner .page .content-page.about .content-info {
+  width: 100vw;
+  height: 50vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding: 1% 10%;
+  font-size: 30px;
+  font-family: 'Bernardo';
+}
+
+.inner .page .content-page.about .content-info .content-presentation {
+  padding: 0% 3% 0% 3%;
+  font-family: 'Sketch';
+}
+
+.inner .page .content-page.about .content-info .content-description {
+  padding: 3% 3% 0% 3%;
 }
 
 .inner .page .content-page.work {
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 3%;
+  background-color: var(--background-color);
   justify-content: center;
+}
+
+.inner .page .content-page.work h1 {
+  text-align: center;
+  font-weight: 500;
+  font-family: Sketch, serif;
+  height: 10vh;
+  position: absolute;
+  z-index: 1;
+}
+
+.inner .page .content-page.work .content-gallery {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: auto;
+}
+
+.inner .page .content-page.work .desc-selection {
+  position: fixed;
+  background-color: #000000d4;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.inner .page .content-page.work .desc-selection .name-experience {
+  font-family: 'Girlfriend';
+  font-size: 1.2rem;
+  color: #C7CFC7;
+}
+
+.inner .page .content-page.work .desc-selection .desc-experience {
+  color: #C7CFC7;
+  font-family: 'Gogh';
+  font-size: 0.85rem;
+}
+
+.inner .page .content-page.work .desc-selection.active {
+  display: flex;
 }
 
 .inner .page .content-page.contact {
@@ -116,8 +242,66 @@ body {
   height: 90vh;
   position: relative;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+}
+
+.inner .page .content-page.contact .dragme {
+  position: absolute;
+  border: 1px solid #367994;
+  z-index: 1;
+  border-radius: 5rem;
+  width: 5rem;
+  height: 5rem;
+  font-size: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 22%;
+  left: 68%;
+}
+
+.inner .page .content-page.contact .dragme:before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-width: 25px 25px 0;
+  border-style: solid;
+  transform: rotate(18deg);
+  border-color: #367994 transparent transparent;
+}
+
+.inner .page .content-page.contact .content-contact-info {
+  width: 100%;
+  color: #fff;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  top: 35%;
+  gap: 5%;
+  font-family: 'Bernardo';
+  font-size: 25px;
+}
+
+.inner .page .content-page.contact .level3D {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--background-color);
+  width: 100vw;
+  height: 100vh;
 }
 
 .inner .page .options-section {
@@ -131,21 +315,39 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0 2% 0 2%;
+  background-color: transparent;
+}
+
+.inner .page .container-work .options-section {
+  display: flex;
+  position: absolute;
+  width: 100vw;
+  height: 10vh;
+  text-align: right;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2% 0 2%;
+  top: 90%;
+  background-color: transparent;
 }
 
 .inner .page .options-section .option-section {
-  display: block;
+  display: flex;
   position: relative;
-  width: 10vw;
-  border: 1px solid #000;
+  border: 1px solid var(--border-btn);
   height: 5vh;
   text-align: center;
   padding: 10px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 
 .inner .page .content-page h1 {
-  font-size: 5vw;
   text-align: center;
   font-weight: 500;
   font-family: Sketch, serif;
@@ -158,15 +360,11 @@ body {
   text-align: right;
 }
 
-.inner .page .content-page.home h1.textalignleft {
-  text-align: left;
-}
-
 .inner .slide {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #C7CFC7;
+  background-color: var(--background-color);
   width: 100vw;
   height: 100vh;
   z-index: 99;
@@ -321,7 +519,7 @@ a {
 #burger-menu span,
 #burger-menu span:before,
 #burger-menu span:after {
-  background: #000;
+  background: var(--border-btn);
   display: block;
   height: 2px;
   opacity: 1;
@@ -405,15 +603,17 @@ a {
   height: 100%;
   position: fixed;
   display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 #text1 {
   user-select: none;
   opacity: 0;
   position: absolute;
-  right: 0;
 }
 #text2 {
   user-select: none;
   position: absolute;
-  right: 0;
 }

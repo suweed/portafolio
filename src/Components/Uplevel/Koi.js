@@ -8,24 +8,35 @@ export function Koi(props) {
   const { nodes, materials, animations } = useGLTF("./models/koi.gltf");
   const { actions, names } = useAnimations(animations, group);
 
+  let contactPage = false;
+  if (window.location.pathname === "/contact") {
+    contactPage = true;
+  }
+  let aboutPage = false;
+  if (window.location.pathname === "/about") {
+    aboutPage = true;
+  }
+
   useEffect(() => {
-    actions[names[0]].reset().fadeIn(0.5).play();
+    actions[names[0]].reset().fadeIn(2).play();
   }, [actions, names])
 
-  let koiMovementOut = window.innerWidth > 1500 ? -35 : -25;
+  let movementDesktop = aboutPage ? 35 : -35;
+  let movementMobile = aboutPage ? 25 : -25;
+  let koiMovementOut = window.innerWidth > 1500 ? movementDesktop : movementMobile;
 
   const { koiMovements, koiRotation } = useSpring({
     from: {
-      koiMovements: [25, 2, 15],
-      koiRotation: [0, -1, 0]
+      koiMovements: aboutPage ? [-25, 5, 15] : [25, 5, 15],
+      koiRotation: aboutPage ? [0, -9, 0] : [0, -1, 0]
     }, to: [
       {
-        koiMovements: [-1, 2, 0],
-        koiRotation: [0, 0, 0]
+        koiMovements: aboutPage ? [-1, 5, 0] : [-1, 5, 0],
+        koiRotation: aboutPage ? [0, -9, 0] : [0, 0, 0]
       },
       {
-        koiMovements: [koiMovementOut, -5, -4],
-        koiRotation: [0, 0, 0]
+        koiMovements: aboutPage ? [koiMovementOut, -5, -4] : [koiMovementOut, -5, -4],
+        koiRotation: aboutPage ? [0, -11, 0] : [0, 0, 0]
       }
     ],
     config: {
@@ -36,9 +47,12 @@ export function Koi(props) {
     loop: true
   });
 
+  let koiMovementsStatic = [0.6, 0, -1];
+  let koiRotationStatic = [0, 0, 0];
+
   return (
     <group ref={group} {...props} dispose={null}>
-      <animated.group name="Scene" position={koiMovements} rotation={koiRotation} scale={0.6}>
+      <animated.group name="Scene" position={contactPage ? koiMovementsStatic : koiMovements} rotation={contactPage ? koiRotationStatic : koiRotation} scale={contactPage ? 1.4 : 0.8}>
         <mesh
           name="mesh_0"
           castShadow

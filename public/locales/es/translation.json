@@ -1,0 +1,42 @@
+{
+    "main": {
+        "home": "Inicio",
+        "contact": "Contacto",
+        "about": "Sobre mí",
+        "work": "Experiencia"
+    },
+    "home": {
+        "developer": "Developer"
+    },
+    "about": {
+        "iam": "Hola, Soy Jesus Cardozo",
+        "description": "Programador desde 2012, residiendo en México, apasionado por el desarrollo frontend y aferrado por el backend. Recientemente, he enfocado mi desarrollo profesional en el comercio electrónico con Magento, pero estoy siempre abierto a aprender nuevas tecnologías y habilidades."
+    },
+    "work": {
+        "experience": "Experiencia",
+        "freelance": {
+            "fabrica": "En colaboración con la consultora Liquen creamos el sitio para la productora de cine, uno de mis primeros trabajos, me gustaría actualizarlo.",
+            "unimedik": "Aplicar diseño propuesto a las diferente paginas de la aplicación de uso interno del consultorio.",
+            "gandhi": "Creación y modificación en funcionalidades para el middleware entre la version 1 y 2 del sitio.",
+            "retop": "Creación y modificación de funcionalidad para terminar una compra. algunos ajustes de diseño."
+        },
+        "qbo": {
+            "dlg": "Durante mi tiempo en Qbo, participé en el desarrollo y modificación de la versión del sitio en ese período. Hice algunos ajustes de diseño.",
+            "gandhi": "Durante mi tiempo en Qbo, participé en el desarrollo y modificación de la versión del sitio en ese período. Hice algunos ajustes de diseño y funcionalidades para la compra.",
+            "nine": "Durante mi tiempo en Qbo, participé en el desarrollo y modificación de la versión del sitio en ese período. Hice algunos ajustes de diseño",
+            "palacio": "Durante mi tiempo en Qbo, participé en el desarrollo y modificación de la versión del sitio en ese período. Hice algunos ajustes de diseño y funcionalidades para la compra, los filtros del catalogo y el buscador",
+            "cat": "Durante mi tiempo en Qbo, participé en el desarrollo y modificación de la versión del sitio en ese período. Hice algunos ajustes de diseño.",
+            "concord": "Durante mi tiempo en Qbo, participé en el desarrollo y modificación de la versión del sitio en ese período. Hice algunos ajustes de diseño.",
+            "ilusion": "Durante mi tiempo en Qbo, participé en el desarrollo y modificación de la versión del sitio en ese período. Hice algunos ajustes de diseño."
+        },
+        "pengo": {
+            "tropic": "Durante mi tiempo en Pengo, participé en el desarrollo y modificación de la versión del sitio en ese período. Hice algunos ajustes de diseño.",
+            "gandhi": "Durante mi tiempo en Pengo, participé en el desarrollo y modificación de la versión del sitio en ese período. Hice algunos ajustes de diseño y funcionalidad para mi cuenta y carrito.",
+            "coca": "Durante mi tiempo en Pengo, participé en el desarrollo y modificación de la versión del sitio en ese período. Hice algunos ajustes de diseño y funcionalidad para mi cuenta, carrito, catalogo compra y app."
+        }
+    },
+    "contact": {
+        "contact": "Contacto",
+        "dragme": "Arrastrame"
+    }
+}

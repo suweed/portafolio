@@ -1,0 +1,219 @@
+/* Then progressively add bigger sizes from small to large */
+
+/* Smartphones start somewhere around here */
+@media (max-width: 450px) {
+    .toggleWrapper {
+        top: 8%;
+        left: 63%;
+    }
+    .inner .page .options-section .option-section {
+        width: 40vw;
+    }
+    .inner .page .content-page.home h1 {
+        font-size: 15vw;
+        width: 100vw;
+    }
+    .inner .page .content-page.home {
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    .inner .page .content-page.home h1.textalignleft {
+        text-align: center;
+    }
+    #containerInk {
+        justify-content: center;
+    }
+
+    .inner .page .content-page.about .content-info {
+        top: 8%;
+    }
+
+    .inner .page .content-page.about .content-info .content-presentation {
+        font-size: 30px;
+    }
+
+    .inner .page .content-page.about .content-info .content-description {
+        font-size: 30px;
+    }
+
+    .inner .page .content-page.work h1 {
+        width: 100vw;
+        margin-top: 50%;
+    }
+    .inner .page .content-page.work .desc-selection {
+        width: 70vw;
+        left: 8%;
+        height: 25vh;
+        top: 33%;
+    }
+}
+
+/* You might do landscape phones here if your content seems to need it */
+@media (min-width: 450px) {
+    .toggleWrapper {
+        top: 8%;
+        left: 75%;
+    }
+    .inner .page .options-section .option-section {
+        width: 10vw;
+    }
+    .inner .page .content-page.home {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .inner .page .content-page.home h1 {
+        font-size: 5vw;
+        width: 50vw;
+    }
+    .inner .page .content-page.home h1.textalignleft {
+        text-align: left;
+        display: flex;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    #containerInk {
+        justify-content: flex-end;
+    }
+
+    .inner .page .content-page.about .content-info .content-presentation {
+        font-size: 40px;
+    }
+    .inner .page .content-page.about .content-info .content-description {
+        font-size: 40px;
+    }
+
+    .inner .page .content-page.work h1 {
+        width: 50vw;
+        margin-top: 20%;
+        font-size: 3em;
+    }
+    .inner .page .content-page.work .desc-selection {
+        width: 45vw;
+        left: 22%;
+        height: 25vh;
+        top: 35%;
+    }
+}
+
+/* Starting into tablets somewhere in here */
+@media (min-width: 600px) {
+    .toggleWrapper {
+        top: 8%;
+        left: 80%;
+    }
+    .nav-item .nav-toggle {
+        margin-top: 5px;
+    }
+    .inner .page .options-section .option-section {
+        width: 20vw;
+    }
+    .inner .page .content-page.home h1 {
+        font-size: 7vw;
+    }
+    .inner .page .content-page.about .content-info {
+        top: 8%;
+    }
+}
+
+/* Perhaps bigger tablets */
+@media (min-width: 750px) {
+    .toggleWrapper {
+        top: 8%;
+        left: 80%;
+    }
+    .nav-item .nav-toggle {
+        margin-top: 5px;
+    }
+    .inner .page .content-page.home {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .inner .page .container-work .options-section .option-section {
+        border: 1px solid #C7CFC7;
+      }
+    
+    .inner .page .container-work .options-section .option-section a {
+    color: #C7CFC7;
+    }
+}
+
+/* Desktop screen or landscape tablet */
+@media (min-width: 900px) {
+    .toggleWrapper {
+        top: 5%;
+        left: 85%;
+    }
+    .nav-item .nav-toggle {
+        margin-top: 5px;
+    }
+    .inner .page .content-page.work .desc-selection {
+        width: 32vw;
+        left: 30%;
+        height: 25vh;
+        top: 35%;
+    }
+}
+
+/* A bit bigger if you need some adjustments around here */
+@media (min-width: 1100px) {
+    .toggleWrapper {
+        top: 5%;
+        left: 85%;
+    }
+    .nav-item .nav-toggle {
+        margin-top: 5px;
+    }
+    .inner .page .content-page.about .content-info .content-presentation {
+        font-size: 50px;
+    }
+    .inner .page .content-page.about .content-info .content-description {
+        font-size: 50px;
+    }
+}
+
+/* Widescreens */
+@media (min-width: 1500px) {
+    .toggleWrapper {
+        top: 5%;
+        left: 88%;
+    }
+}
+
+@media (min-width: 1800px) {
+    .toggleWrapper {
+        top: 5%;
+        left: 90%;
+    }
+    .inner .page .content-page.about .content-info .content-presentation {
+        font-size: 80px;
+    }
+    .inner .page .content-page.about .content-info .content-description {
+        font-size: 80px;
+    }
+}
+
+@media (min-width: 2000px) {
+    .toggleWrapper {
+        top: 5.5%;
+        left: 90%;
+    }
+    .nav-item .nav-toggle {
+        margin-top: 10px;
+    }
+    .inner .page .options-section .option-section {
+        font-size: 35px;
+    }
+    .inner .page .content-page.work h1 {
+        margin-top: 20%;
+        font-size: 90px;
+    }
+}

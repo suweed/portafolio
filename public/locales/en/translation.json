@@ -1,0 +1,42 @@
+{
+    "main": {
+        "home": "Home",
+        "contact": "Contact",
+        "about": "About",
+        "work": "Work"
+    },
+    "home": {
+        "developer": "Developer"
+    },
+    "about": {
+        "iam": "Hi, I am Jesus Cardozo",
+        "description": "Programmer since 2012, based in Mexico, passionate about frontend development and drawn to the backend. Recently, I have focused my professional development on e-commerce with Magento, but I am always open to learning new technologies and skills."
+    },
+    "work": {
+        "experience": "Experience",
+        "freelance": {
+            "fabrica": "In collaboration with the consulting firm Liquen, we created the website for the film production company, one of my first works. I would like to update it.",
+            "unimedik": "Apply proposed design to the different pages of the internal office application.",
+            "gandhi": "Creation and modification of functionalities for the middleware between version 1 and 2 of the site.",
+            "retop": "Creation and modification of functionality to complete a purchase. Some design adjustments."
+        },
+        "qbo": {
+            "dlg": "During my time at Qbo, I participated in the development and modification of the site's version during that period. I made some design adjustments.",
+            "gandhi": "During my time at Qbo, I participated in the development and modification of the site's version during that period. I made some design and functionality adjustments for the purchase.",
+            "nine": "During my time at Qbo, I participated in the development and modification of the site's version during that period. I made some design adjustments.",
+            "palacio": "During my time at Qbo, I participated in the development and modification of the site's version during that period. I made some design and functionality adjustments for the purchase, catalog filters, and the search engine.",
+            "cat": "During my time at Qbo, I participated in the development and modification of the site's version during that period. I made some design adjustments.",
+            "concord": "During my time at Qbo, I participated in the development and modification of the site's version during that period. I made some design adjustments.",
+            "ilusion": "During my time at Qbo, I participated in the development and modification of the site's version during that period. I made some design adjustments."
+        },
+        "pengo": {
+            "tropic": "During my time at Pengo, I participated in the development and modification of the site's version during that period. I made some design adjustments.",
+            "gandhi": "During my time at Pengo, I participated in the development and modification of the site's version during that period. I made some design and functionality adjustments for my account and cart.",
+            "coca": "During my time at Pengo, I participated in the development and modification of the site's version during that period. I made some design and functionality adjustments for my account, cart, purchase catalog, and app."
+        }
+    },
+    "contact": {
+        "contact": "Contact",
+        "dragme": "Drag Me"
+    }
+}
