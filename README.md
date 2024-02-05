@@ -29,10 +29,9 @@
     <a href="https://github.com/suweed/portafolio">
         <img src="public/images/avatarSelfie.png" alt="Logo" width="80" height="80">
     </a>
-    <h3 align="center">Configurador de Productos</h3>
+    <h3 align="center">Portafolio Jesús Cardozo</h3>
     <p align="center">
-        Configurador de productos para mostrar variaciones de un producto,
-        selector de colores, material, piezas
+        Portafolio 3D de Jesús Cardozo 4 paginas sobre información principal de experiencia y desarrollo profesional
         <br />
         <a href="https://github.com/suweed/portafolio"><strong>Explore the docs »</strong></a>
         <br />
