@@ -49,6 +49,12 @@
         height: 25vh;
         top: 33%;
     }
+    .cat {
+        left: 25vw;
+    }
+    .text-progress {
+        font-size: 3em;
+    }
 }
 
 /* You might do landscape phones here if your content seems to need it */
@@ -78,6 +84,9 @@
         align-items: center;
         flex-wrap: wrap;
     }
+    .inner .page .content-page.contact h1 {
+        font-size: 4vw;
+    }
     #containerInk {
         justify-content: flex-end;
     }
@@ -99,6 +108,12 @@
         left: 22%;
         height: 25vh;
         top: 35%;
+    }
+    .cat {
+        left: 40vw;
+    }
+    .text-progress {
+        font-size: 5em;
     }
 }
 
@@ -169,6 +184,9 @@
         top: 5%;
         left: 85%;
     }
+    .inner .page .content-page.work h1 {
+        margin-top: 0%;
+    }
     .nav-item .nav-toggle {
         margin-top: 5px;
     }
@@ -186,6 +204,21 @@
         top: 5%;
         left: 88%;
     }
+    .inner .page .content-page.work h1 {
+        font-size: 3vw;
+    }
+    .inner .page .content-page.home h1 {
+        font-size: 5vw;
+    }
+    .inner .page .content-page.about .content-info {
+        top: 2%;
+    }
+    .inner .page .content-page.contact .content-contact-info {
+        font-size: 30px;
+    }
+    .inner .page .content-page.contact .dragme {
+        font-size: 13px;
+    }
 }
 
 @media (min-width: 1800px) {
@@ -193,11 +226,14 @@
         top: 5%;
         left: 90%;
     }
+    .inner .page .content-page.work h1 {
+        font-size: 3vw;
+    }
     .inner .page .content-page.about .content-info .content-presentation {
         font-size: 80px;
     }
     .inner .page .content-page.about .content-info .content-description {
-        font-size: 80px;
+        font-size: 55px;
     }
 }
 
@@ -213,7 +249,7 @@
         font-size: 35px;
     }
     .inner .page .content-page.work h1 {
-        margin-top: 20%;
+        margin-top: 0;
         font-size: 90px;
     }
 }

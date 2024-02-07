@@ -58,7 +58,7 @@ function Aquariumglass({ children, ...props }) {
       if (window.innerWidth > 1500 && window.innerWidth < 1800) {
         scaleX = 6.8;
       } else if (window.innerWidth > 1800 && window.innerWidth < 2000) {
-        scaleX = 12;
+        scaleX = 12.5;
       } else if (window.innerWidth > 2000){
         scaleX = 15;
       }
@@ -66,7 +66,7 @@ function Aquariumglass({ children, ...props }) {
       return scaleX;
     }
 
-    let scaleAqueriumScreenX = sizeXAqueriumMediaQuery();
+    let scaleAqueriumScreenX = contactPage ? 4.5 : sizeXAqueriumMediaQuery();
     let scaleAqueriumScreenY = window.innerWidth > 1500 ? 6.5 : 6.5;
     let scaleAqueriumScreenZ = window.innerWidth > 1500 ? 1 : 1;
 

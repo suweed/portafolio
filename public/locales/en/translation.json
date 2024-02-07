@@ -3,7 +3,8 @@
         "home": "Home",
         "contact": "Contact",
         "about": "About",
-        "work": "Work"
+        "work": "Work",
+        "loading": "Loading..."
     },
     "home": {
         "developer": "Developer"

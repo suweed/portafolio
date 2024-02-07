@@ -3,7 +3,8 @@
         "home": "Inicio",
         "contact": "Contacto",
         "about": "Sobre mí",
-        "work": "Experiencia"
+        "work": "Experiencia",
+        "loading": "Cargando..."
     },
     "home": {
         "developer": "Developer"
