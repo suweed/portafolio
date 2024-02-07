@@ -27,7 +27,7 @@ function App() {
   return (
     <>
       <Suspense fallback={null}>
-        <div className='App' data-theme={isDark ? 'dark' : 'light'}>
+        {started && <div className='App' data-theme={isDark ? 'dark' : 'light'}>
           <NavBar />
           <AnimatePresence mode="wait">
             <Routes location={location} key={location.pathname}>
@@ -37,7 +37,7 @@ function App() {
               <Route path="/contact" element={<Contact />} />
             </Routes>
           </AnimatePresence>
-        </div>
+        </div>}
       </Suspense>
       <LoadingScreen started={started} setStarted={setStarted} />
     </>

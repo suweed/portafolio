@@ -18,11 +18,11 @@ export const LoadingScreen = (props) => {
                 setStarted(true);
             }, 800)
         }
-    }, [progress, total, loaded, item])
-    
+    }, [progress, total, loaded, item, setStarted])
+
     return (
         <div className={`loadingScreen ${started ? 'loadingScreen--started' : ''} ${isDark ? 'dark' : ''}`}>
-            <div className={`loadingScreen__progress`}>
+            <div className="loadingScreen__progress">
                 <div
                     className={`loadingScreen__progress__value ${isDark ? 'dark' : ''}`}
                     style={{ width: `${progress}%` }}
