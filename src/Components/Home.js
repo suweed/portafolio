@@ -50,7 +50,7 @@ const Home = () => {
                     initial={{y: "0vh", x: "-100vw"}}
                     animate={{y: "0vh", x: "0vw"}}
                     exit={{y: "0vh", x: "100vw"}}
-                    transition={{ duration: 1.3, ease: 'easeOut'}}
+                    transition={{ delay: 1, duration: 1.3, ease: 'easeOut'}}
                 >
                     <InkText />
                 </motion.h1>
@@ -59,7 +59,7 @@ const Home = () => {
                     initial={{y: "0vh", x: "100vw"}}
                     animate={{y: "0vh", x: "0vw"}}
                     exit={{y: "0vh", x: "-100vw"}}
-                    transition={{ duration: 1.3, ease: 'easeOut'}}
+                    transition={{ delay: 1, duration: 1.3, ease: 'easeOut'}}
                 >
                     {t('home.developer')}
                 </motion.h1>
