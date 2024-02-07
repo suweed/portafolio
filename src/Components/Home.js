@@ -50,7 +50,7 @@ const Home = () => {
                     initial={{y: "0vh", x: "-100vw"}}
                     animate={{y: "0vh", x: "0vw"}}
                     exit={{y: "0vh", x: "100vw"}}
-                    transition={{ delay: 1, duration: 1.3, ease: 'easeOut'}}
+                    transition={{ delay: 1.5, duration: 1.3, ease: 'easeOut'}}
                 >
                     <InkText />
                 </motion.h1>
@@ -59,7 +59,7 @@ const Home = () => {
                     initial={{y: "0vh", x: "100vw"}}
                     animate={{y: "0vh", x: "0vw"}}
                     exit={{y: "0vh", x: "-100vw"}}
-                    transition={{ delay: 1, duration: 1.3, ease: 'easeOut'}}
+                    transition={{ delay: 1.5, duration: 1.3, ease: 'easeOut'}}
                 >
                     {t('home.developer')}
                 </motion.h1>
@@ -67,9 +67,9 @@ const Home = () => {
             <div className="options-section">
                 <motion.div
                     className="option-section"
-                    initial={{y: "0vh"}}
+                    initial={{y: "10vh"}}
                     animate={{y: "0vh"}}
-                    exit={{y: "0vh"}}
+                    exit={{y: "10vh"}}
                     transition={{ duration: .5, ease: 'easeOut'}}
                 >
                     <Link className="nav-link" to="/contact">
@@ -78,9 +78,9 @@ const Home = () => {
                 </motion.div>
                 <motion.div
                     className="option-section"
-                    initial={{y: "0vh"}}
+                    initial={{y: "10vh"}}
                     animate={{y: "0vh"}}
-                    exit={{y: "0vh"}}
+                    exit={{y: "10vh"}}
                     transition={{ duration: .5, ease: 'easeOut'}}
                 >
                     <Link className="nav-link" to="/about">

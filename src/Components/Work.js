@@ -18,7 +18,7 @@ const Work = () => {
                     initial={{y: widthScreenMobile ? "-43vh" : "-40vh", x: "100vw"}}
                     animate={{y: widthScreenMobile ? "-43vh" : "-40vh", x: "0vw"}}
                     exit={{y: widthScreenMobile ? "-43vh" : "-40vh", x: "-100vw"}}
-                    transition={{ duration: 1.3, ease: 'easeOut'}}
+                    transition={{ delay: 1.5, duration: 1.3, ease: 'easeOut'}}
                 >
                     {t('work.experience')}
                 </motion.h1>
@@ -34,9 +34,9 @@ const Work = () => {
             <div className="options-section">
                 <motion.div
                     className="option-section"
-                    initial={{y: "0vh"}}
+                    initial={{y: "10vh"}}
                     animate={{y: "0vh"}}
-                    exit={{y: "0vh"}}
+                    exit={{y: "10vh"}}
                     transition={{ duration: .5, ease: 'easeOut'}}
                 >
                     <Link className="nav-link" to="/about">
@@ -45,9 +45,9 @@ const Work = () => {
                 </motion.div>
                 <motion.div
                     className="option-section"
-                    initial={{y: "0vh"}}
+                    initial={{y: "10vh"}}
                     animate={{y: "0vh"}}
-                    exit={{y: "0vh"}}
+                    exit={{y: "10vh"}}
                     transition={{ duration: .5, ease: 'easeOut'}}
                 >
                     <Link className="nav-link" to="/contact">

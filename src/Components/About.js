@@ -50,7 +50,7 @@ const About = () => {
                         initial={{y: "-100vh"}}
                         animate={{y: "0vh"}}
                         exit={{y: "-100vh"}}
-                        transition={{ duration: 1.5, ease: 'easeOut'}}
+                        transition={{ delay: 1, duration: 1.5, ease: 'easeOut'}}
                     >
                         {t('about.iam')}
                     </motion.div>
@@ -59,7 +59,7 @@ const About = () => {
                         initial={{y: "100vh"}}
                         animate={{y: "0vh"}}
                         exit={{y: "100vh"}}
-                        transition={{ duration: 1.5, ease: 'easeOut'}}
+                        transition={{ delay: 1, duration: 1.5, ease: 'easeOut'}}
                     >
                         {t('about.description')}
                     </motion.div>
@@ -68,9 +68,9 @@ const About = () => {
             <div className="options-section">
                 <motion.div
                     className="option-section"
-                    initial={{y: "0vh"}}
+                    initial={{y: "10vh"}}
                     animate={{y: "0vh"}}
-                    exit={{y: "0vh"}}
+                    exit={{y: "10vh"}}
                     transition={{ duration: .5, ease: 'easeOut'}}
                 >
                     <Link className="nav-link" to="/">
@@ -79,9 +79,9 @@ const About = () => {
                 </motion.div>
                 <motion.div
                     className="option-section"
-                    initial={{y: "0vh"}}
+                    initial={{y: "10vh"}}
                     animate={{y: "0vh"}}
-                    exit={{y: "0vh"}}
+                    exit={{y: "10vh"}}
                     transition={{ duration: .5, ease: 'easeOut'}}
                 >
                     <Link className="nav-link" to="/work">

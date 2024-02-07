@@ -63,7 +63,7 @@ const Contact = () => {
                         initial={{y: "100vh", x: "0vw"}}
                         animate={{y: "-20vh", x: "0vw"}}
                         exit={{y: "-100vh", x: "0vw"}}
-                        transition={{ delay: 1, duration: 1, ease: 'easeOut'}}
+                        transition={{ delay: 1.5, duration: 1, ease: 'easeOut'}}
                     >
                         {t('contact.contact')}
                     </motion.h1>
@@ -74,7 +74,7 @@ const Contact = () => {
                         initial={{x: "-100vh"}}
                         animate={{x: "0vh"}}
                         exit={{x: "-100vh"}}
-                        transition={{ duration: 2.5, ease: 'easeOut'}}
+                        transition={{ delay: 1.5, duration: 2.5, ease: 'easeOut'}}
                     >
                         gsuskr2o@gmail.com
                     </motion.h2>
@@ -83,7 +83,7 @@ const Contact = () => {
                         initial={{x: "100vh"}}
                         animate={{x: "0vh"}}
                         exit={{x: "100vh"}}
-                        transition={{ duration: 2.5, ease: 'easeOut'}}
+                        transition={{ delay: 1.5, duration: 2.5, ease: 'easeOut'}}
                     >
                         55 4013 7688
                     </motion.h2>
@@ -92,9 +92,9 @@ const Contact = () => {
             <div className="options-section">
                 <motion.div
                     className="option-section"
-                    initial={{y: "0vh"}}
+                    initial={{y: "10vh"}}
                     animate={{y: "0vh"}}
-                    exit={{y: "0vh"}}
+                    exit={{y: "10vh"}}
                     transition={{ duration: .5, ease: 'easeOut'}}
                 >
                     <Link className="nav-link" to="/work">
@@ -103,9 +103,9 @@ const Contact = () => {
                 </motion.div>
                 <motion.div
                     className="option-section"
-                    initial={{y: "0vh"}}
+                    initial={{y: "10vh"}}
                     animate={{y: "0vh"}}
-                    exit={{y: "0vh"}}
+                    exit={{y: "10vh"}}
                     transition={{ duration: .5, ease: 'easeOut'}}
                 >
                     <Link className="nav-link" to="/">
