@@ -104,7 +104,7 @@ body {
 .inner .page {
   background-color: var(--background-color);
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
@@ -114,10 +114,10 @@ body {
 }
 
 .inner .page div {
-  height: 100%;
+  height: 100vh;
 }
 
-.inner .page .content-page.home {
+.inner .page div  .content-page.home {
   width: 100vw;
   position: relative;
   display: flex;
@@ -125,7 +125,7 @@ body {
   background-color: var(--background-color);
 }
 
-.inner .page .content-page.home .level3D {
+.inner .page div .content-page.home .level3D {
   position: fixed;
   top: 10%;
   left: 0;
@@ -134,7 +134,7 @@ body {
   height: 100vh;
 }
 
-.inner .page .content-page.about {
+.inner .page div .content-page.about {
   width: 100vw;
   height: 90vh;
   position: relative;
@@ -147,11 +147,11 @@ body {
   background-color: var(--background-color);
 }
 
-.inner .page .content-page.about h1{
+.inner .page div .content-page.about h1{
   font-family: 'Gogh';
 }
 
-.inner .page .content-page.about .level3D {
+.inner .page div .content-page.about .level3D {
   position: fixed;
   top: 10%;
   left: 0;
@@ -160,7 +160,7 @@ body {
   height: 80vh;
 }
 
-.inner .page .content-page.about .content-info {
+.inner .page div .content-page.about .content-info {
   width: 100vw;
   height: 50vh;
   position: relative;
@@ -173,16 +173,16 @@ body {
   font-family: 'Bernardo';
 }
 
-.inner .page .content-page.about .content-info .content-presentation {
+.inner .page div .content-page.about .content-info .content-presentation {
   padding: 0% 3% 0% 3%;
   font-family: 'Sketch';
 }
 
-.inner .page .content-page.about .content-info .content-description {
+.inner .page div .content-page.about .content-info .content-description {
   padding: 3% 3% 0% 3%;
 }
 
-.inner .page .content-page.work {
+.inner .page div .content-page.work {
   width: 100vw;
   height: 100vh;
   position: relative;
@@ -194,7 +194,7 @@ body {
   justify-content: center;
 }
 
-.inner .page .content-page.work h1 {
+.inner .page div .content-page.work h1 {
   text-align: center;
   font-weight: 500;
   font-family: Sketch, serif;
@@ -203,7 +203,7 @@ body {
   z-index: 1;
 }
 
-.inner .page .content-page.work .content-gallery {
+.inner .page div .content-page.work .content-gallery {
   position: relative;
   width: 100%;
   height: 100%;
@@ -211,7 +211,7 @@ body {
   pointer-events: auto;
 }
 
-.inner .page .content-page.work .desc-selection {
+.inner .page div .content-page.work .desc-selection {
   position: fixed;
   background-color: #000000d4;
   display: none;
@@ -224,23 +224,23 @@ body {
   padding: 1rem;
 }
 
-.inner .page .content-page.work .desc-selection .name-experience {
+.inner .page div .content-page.work .desc-selection .name-experience {
   font-family: 'Girlfriend';
   font-size: 1.2rem;
   color: #C7CFC7;
 }
 
-.inner .page .content-page.work .desc-selection .desc-experience {
+.inner .page div .content-page.work .desc-selection .desc-experience {
   color: #C7CFC7;
   font-family: 'Gogh';
   font-size: 0.85rem;
 }
 
-.inner .page .content-page.work .desc-selection.active {
+.inner .page div .content-page.work .desc-selection.active {
   display: flex;
 }
 
-.inner .page .content-page.contact {
+.inner .page div .content-page.contact {
   width: 100vw;
   height: 90vh;
   position: relative;
@@ -252,7 +252,7 @@ body {
   background-color: var(--background-color);
 }
 
-.inner .page .content-page.contact .dragme {
+.inner .page div .content-page.contact .dragme {
   position: absolute;
   border: 1px solid #367994;
   z-index: 1;
@@ -268,7 +268,7 @@ body {
   left: 68%;
 }
 
-.inner .page .content-page.contact .dragme:before {
+.inner .page div .content-page.contact .dragme:before {
   content: "";
   position: absolute;
   bottom: -15px;
@@ -281,7 +281,7 @@ body {
   border-color: #367994 transparent transparent;
 }
 
-.inner .page .content-page.contact .content-contact-info {
+.inner .page div .content-page.contact .content-contact-info {
   width: 100%;
   color: #fff;
   z-index: 1;
@@ -298,7 +298,7 @@ body {
   font-size: 25px;
 }
 
-.inner .page .content-page.contact .level3D {
+.inner .page div .content-page.contact .level3D {
   position: fixed;
   top: 0;
   left: 0;
@@ -307,11 +307,11 @@ body {
   height: 100vh;
 }
 
-.inner .page .options-section {
+.inner .page div .options-section {
   display: flex;
   position: relative;
   width: 100vw;
-  height: 10%;
+  height: 10vh;
   text-align: right;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -321,7 +321,7 @@ body {
   background-color: transparent;
 }
 
-.inner .page .container-work .options-section {
+.inner .page div .container-work .options-section {
   display: flex;
   position: absolute;
   width: 100vw;
@@ -336,7 +336,7 @@ body {
   background-color: transparent;
 }
 
-.inner .page .options-section .option-section {
+.inner .page div .options-section .option-section {
   display: flex;
   position: relative;
   border: 1px solid var(--border-btn);
@@ -349,11 +349,11 @@ body {
   align-items: center;
 }
 
-.inner .page .options-section .option-section a {
+.inner .page div .options-section .option-section a {
   text-decoration: none;
 }
 
-.inner .page .content-page h1 {
+.inner .page div .content-page h1 {
   text-align: center;
   font-weight: 500;
   font-family: Sketch, serif;
@@ -362,7 +362,7 @@ body {
   position: relative;
 }
 
-.inner .page .content-page.home h1.textaligright {
+.inner .page div .content-page.home h1.textaligright {
   text-align: right;
 }
 
