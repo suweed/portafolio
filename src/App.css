@@ -113,6 +113,10 @@ body {
   flex-wrap: nowrap;
 }
 
+.inner .page div {
+  height: 100%;
+}
+
 .inner .page .content-page.home {
   width: 100vw;
   position: relative;
