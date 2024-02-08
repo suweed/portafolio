@@ -60,9 +60,9 @@ const Contact = () => {
                 <div className="content-title">
                     <motion.h1
                         className="title-page"
-                        initial={{y: "100vh", x: "0vw"}}
-                        animate={{y: "-20vh", x: "0vw"}}
-                        exit={{y: "-100vh", x: "0vw"}}
+                        initial={{y: "-100vh", x: "0vw"}}
+                        animate={{y: "15vh", x: "0vw"}}
+                        exit={{y: "0vh", x: "0vw"}}
                         transition={{ delay: 1.5, duration: 1, ease: 'easeOut'}}
                     >
                         {t('contact.contact')}
@@ -71,18 +71,18 @@ const Contact = () => {
                 <div className="content-contact-info">
                     <motion.h2
                         className="email-info"
-                        initial={{x: "-100vh"}}
-                        animate={{x: "0vh"}}
-                        exit={{x: "-100vh"}}
+                        initial={{x: "-100vh", y: "-10vh"}}
+                        animate={{x: "0vh", y: "-15vh"}}
+                        exit={{x: "-100vh", y: "-15vh"}}
                         transition={{ delay: 1.5, duration: 2.5, ease: 'easeOut'}}
                     >
                         gsuskr2o@gmail.com
                     </motion.h2>
                     <motion.h2
                         className="phone-info"
-                        initial={{x: "100vh"}}
-                        animate={{x: "0vh"}}
-                        exit={{x: "100vh"}}
+                        initial={{x: "100vh", y: "-10vh"}}
+                        animate={{x: "0vh", y: "-18vh"}}
+                        exit={{x: "100vh", y: "-15vh"}}
                         transition={{ delay: 1.5, duration: 2.5, ease: 'easeOut'}}
                     >
                         55 4013 7688
