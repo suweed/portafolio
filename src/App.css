@@ -115,7 +115,6 @@ body {
 
 .inner .page .content-page.home {
   width: 100vw;
-  height: 90vh;
   position: relative;
   display: flex;
   gap: 3%;
