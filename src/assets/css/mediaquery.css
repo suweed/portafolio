@@ -19,7 +19,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        height: 85vh;
+        height: 90%;
     }
     .inner .page .content-page.home h1.textalignleft {
         text-align: center;
