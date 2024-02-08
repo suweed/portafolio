@@ -81,6 +81,7 @@
 
 .loadingScreen--started .loadingScreen__board {
     opacity: 0;
+    transition: 0.5s;
 }
 
 /* Loading cat aniamtion */
