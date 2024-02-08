@@ -13,7 +13,7 @@ import About from './Components/About';
 import Work from './Components/Work';
 import Contact from './Components/Contact';
 import { LoadingScreen } from './Components/Loading/LoadingScreen';
-import { Suspense, useState } from 'react';
+import { useState } from 'react';
 
 THREE.Cache.enabled = true;
 

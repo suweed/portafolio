@@ -12,11 +12,10 @@ export const LoadingScreen = (props) => {
     const [ isDark ] = useLocalStorage('isDark', preference);
 
     useEffect(() => {
-        console.log({ progress, total, loaded, item });
         if (progress === 100) {
             setTimeout(() => {
                 setStarted(true);
-            }, 1000)
+            }, 2000)
         }
     }, [progress, total, loaded, item, setStarted])
 
