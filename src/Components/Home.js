@@ -18,7 +18,7 @@ const Home = () => {
         <div>
             <div className="content-page home">
                 <div className="level3D">
-                    <Canvas camera={{ position: [0, 150, 0], fov: 7 }} shadows>
+                    <Canvas dpr={[1, 1.5]} camera={{ position: [0, 150, 0], fov: 7 }} shadows>
                         <OrbitControls enableZoom={false} minPolarAngle={Math.PI / 2} maxPolarAngle={Math.PI / 2} minAzimuthAngle={0} maxAzimuthAngle={0}  />
                         <ambientLight />
                         <directionalLight

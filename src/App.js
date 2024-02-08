@@ -26,19 +26,17 @@ function App() {
   
   return (
     <>
-      <Suspense fallback={null}>
-        {started && <div className='App' data-theme={isDark ? 'dark' : 'light'}>
-          <NavBar />
-          <AnimatePresence mode="wait">
-            <Routes location={location} key={location.pathname}>
-              <Route index element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/work" element={<Work />} />
-              <Route path="/contact" element={<Contact />} />
-            </Routes>
-          </AnimatePresence>
-        </div>}
-      </Suspense>
+      {started && <div className='App' data-theme={isDark ? 'dark' : 'light'}>
+        <NavBar />
+        <AnimatePresence mode="wait">
+          <Routes location={location} key={location.pathname}>
+            <Route index element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/work" element={<Work />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </AnimatePresence>
+      </div>}
       <LoadingScreen started={started} setStarted={setStarted} />
     </>
   );
