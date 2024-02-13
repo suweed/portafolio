@@ -16,24 +16,24 @@
     "work": {
         "experience": "Experience",
         "freelance": {
-            "fabrica": "In collaboration with the consulting firm Liquen, we created the website for the film production company, one of my first works. I would like to update it.",
-            "unimedik": "Apply proposed design to the different pages of the internal office application.",
-            "gandhi": "Creation and modification of functionalities for the middleware between version 1 and 2 of the site.",
-            "retop": "Creation and modification of functionality to complete a purchase. Some design adjustments."
+            "fabrica": "In collaboration with the consulting firm Liquen, we created the website for the film production company. This was one of my first jobs and I would like to update it.",
+            "unimedik": "Apply the proposed design to the different pages of the internal use application for the medical office.",
+            "gandhi": "Creation and modification of functionalities for the middleware between version 1 and 2 of the website.",
+            "retop": "Creation and modification of functionalities to complete a purchase. I also made some design adjustments and bug fixes."
         },
         "qbo": {
-            "dlg": "During my time at Qbo, I participated in the development and modification of the site's version during that period. I made some design adjustments.",
-            "gandhi": "During my time at Qbo, I participated in the development and modification of the site's version during that period. I made some design and functionality adjustments for the purchase.",
-            "nine": "During my time at Qbo, I participated in the development and modification of the site's version during that period. I made some design adjustments.",
-            "palacio": "During my time at Qbo, I participated in the development and modification of the site's version during that period. I made some design and functionality adjustments for the purchase, catalog filters, and the search engine.",
-            "cat": "During my time at Qbo, I participated in the development and modification of the site's version during that period. I made some design adjustments.",
-            "concord": "During my time at Qbo, I participated in the development and modification of the site's version during that period. I made some design adjustments.",
-            "ilusion": "During my time at Qbo, I participated in the development and modification of the site's version during that period. I made some design adjustments."
+            "dlg": "I made complete adjustments to the main layout, modern design, icon movement for better visibility, and bug fixes.",
+            "gandhi": "I made modifications to the interface of some components such as product detail, product catalog, and the search bar, as well as bug fixes.",
+            "nine": "I made adjustments to the design of some components such as the superhero of homer and the search bar, as well as bug fixes.",
+            "palacio": "I modified the design of the main layout, filters in the product catalog with ajax, shopping cart with ajax, and the search bar. I also integrated Google libraries for camera recognition to generate search terms.",
+            "cat": "I made modifications to the layout and functionalities for the shopping cart and checkout process, as well as bug fixes.",
+            "concord": "I solved errors in the process of adding to cart, adjusted the cart layout, and fixed bugs.",
+            "ilusion": "I made design adjustments to the landing pages of main products, adjusted the layout for the shopping cart and catalog, as well as bug fixes."
         },
         "pengo": {
-            "tropic": "During my time at Pengo, I participated in the development and modification of the site's version during that period. I made some design adjustments.",
-            "gandhi": "During my time at Pengo, I participated in the development and modification of the site's version during that period. I made some design and functionality adjustments for my account and cart.",
-            "coca": "During my time at Pengo, I participated in the development and modification of the site's version during that period. I made some design and functionality adjustments for my account, cart, purchase catalog, and app."
+            "tropic": "I made design modifications to the home layout, my account, and catalog, as well as bug fixes.",
+            "gandhi": "I modified the interface for my account, shopping cart, product catalog, shopping cart, and app, solved catalog and checkout bugs, implemented ajax catalog, and fixed bugs.",
+            "coca": "I joined the development team creating components such as filters for the catalog, mini shopping cart, my account, checkout, and modified the Magento API to meet the requirements for the mobile application, as well as fixed bugs."
         }
     },
     "contact": {

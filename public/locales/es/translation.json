@@ -16,24 +16,24 @@
     "work": {
         "experience": "Experiencia",
         "freelance": {
-            "fabrica": "En colaboración con la consultora Liquen creamos el sitio para la productora de cine, uno de mis primeros trabajos, me gustaría actualizarlo.",
-            "unimedik": "Aplicar diseño propuesto a las diferente paginas de la aplicación de uso interno del consultorio.",
-            "gandhi": "Creación y modificación en funcionalidades para el middleware entre la version 1 y 2 del sitio.",
-            "retop": "Creación y modificación de funcionalidad para terminar una compra. algunos ajustes de diseño."
+            "fabrica": "En colaboración con la consultora Liquen, creamos el sitio para la productora de cine. Este fue uno de mis primeros trabajos y me gustaría actualizarlo.",
+            "unimedik": "Aplicar el diseño propuesto a las diferentes páginas de la aplicación de uso interno del consultorio.",
+            "gandhi": "Creación y modificación de funcionalidades para el middleware entre la versión 1 y 2 del sitio.",
+            "retop": "Creación y modificación de funcionalidades para completar una compra. También realicé algunos ajustes de diseño y corrección de errores."
         },
         "qbo": {
-            "dlg": "Durante mi tiempo en Qbo, participé en el desarrollo y modificación de la versión del sitio en ese período. Hice algunos ajustes de diseño.",
-            "gandhi": "Durante mi tiempo en Qbo, participé en el desarrollo y modificación de la versión del sitio en ese período. Hice algunos ajustes de diseño y funcionalidades para la compra.",
-            "nine": "Durante mi tiempo en Qbo, participé en el desarrollo y modificación de la versión del sitio en ese período. Hice algunos ajustes de diseño",
-            "palacio": "Durante mi tiempo en Qbo, participé en el desarrollo y modificación de la versión del sitio en ese período. Hice algunos ajustes de diseño y funcionalidades para la compra, los filtros del catalogo y el buscador",
-            "cat": "Durante mi tiempo en Qbo, participé en el desarrollo y modificación de la versión del sitio en ese período. Hice algunos ajustes de diseño.",
-            "concord": "Durante mi tiempo en Qbo, participé en el desarrollo y modificación de la versión del sitio en ese período. Hice algunos ajustes de diseño.",
-            "ilusion": "Durante mi tiempo en Qbo, participé en el desarrollo y modificación de la versión del sitio en ese período. Hice algunos ajustes de diseño."
+            "dlg": "Realicé ajustes completos en la maqueta principal, diseño moderno y movimiento de iconos para mejorar la visibilidad, además de corregir errores.",
+            "gandhi": "Realicé modificaciones en la interfaz de algunos componentes como el detalle de producto, catálogo de productos y la barra de búsqueda, además de corregir errores.",
+            "nine": "Realicé ajustes en el diseño de algunos componentes como el superheroe del home y el buscador, además de corregir errores.",
+            "palacio": "Modifiqué el diseño de la maqueta principal, los filtros en el catálogo de productos con ajax, el carrito de compra con ajax y la barra de búsqueda. También integré librerías de Google de reconocimiento con cámara para generar términos de búsqueda.",
+            "cat": "Realicé modificaciones en la maqueta y funcionalidades para el carrito y el proceso de pago, además de corregir errores.",
+            "concord": "Solucioné errores en el proceso de agregar a carrito, ajusté la maqueta del carrito y corregí errores.",
+            "ilusion": "Realicé ajustes de diseño en las landingpages de productos principales, ajusté la maqueta para el carrito y el catálogo, además de corregir errores."
         },
         "pengo": {
-            "tropic": "Durante mi tiempo en Pengo, participé en el desarrollo y modificación de la versión del sitio en ese período. Hice algunos ajustes de diseño.",
-            "gandhi": "Durante mi tiempo en Pengo, participé en el desarrollo y modificación de la versión del sitio en ese período. Hice algunos ajustes de diseño y funcionalidad para mi cuenta y carrito.",
-            "coca": "Durante mi tiempo en Pengo, participé en el desarrollo y modificación de la versión del sitio en ese período. Hice algunos ajustes de diseño y funcionalidad para mi cuenta, carrito, catalogo compra y app."
+            "tropic": "Realicé modificaciones en el diseño de la maqueta del inicio, mi cuenta y catálogo, además de corregir errores.",
+            "gandhi": "Modifiqué la interfaz para mi cuenta, carrito, catálogo, carrito de compra y la aplicación, solucioné errores de catálogo y proceso de pago, implementé catálogo ajax y corregí errores.",
+            "coca": "Me integré al equipo de desarrollo creando componentes como filtros para el catálogo, minicarrito, mi cuenta, proceso de pago, y modifiqué el API de Magento para satisfacer los requisitos para la aplicación móvil, además de corregir errores."
         }
     },
     "contact": {
