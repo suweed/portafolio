@@ -319,6 +319,7 @@ body {
   justify-content: space-between;
   padding: 0 2% 0 2%;
   background-color: transparent;
+  z-index: 1;
 }
 
 .inner .page div .container-work .options-section {

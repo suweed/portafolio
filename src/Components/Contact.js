@@ -81,7 +81,7 @@ const Contact = () => {
                     <motion.h2
                         className="phone-info"
                         initial={{x: "100vh", y: "-10vh"}}
-                        animate={{x: "0vh", y: "-18vh"}}
+                        animate={{x: "0vh", y: "-15vh"}}
                         exit={{x: "100vh", y: "-15vh"}}
                         transition={{ delay: 1.5, duration: 2.5, ease: 'easeOut'}}
                     >
@@ -95,7 +95,7 @@ const Contact = () => {
                     initial={{y: "10vh"}}
                     animate={{y: "0vh"}}
                     exit={{y: "10vh"}}
-                    transition={{ duration: .5, ease: 'easeOut'}}
+                    transition={{ delay: 1.5, duration: .5, ease: 'easeOut'}}
                 >
                     <Link className="nav-link" to="/work">
                         {t('main.work')}
@@ -106,7 +106,7 @@ const Contact = () => {
                     initial={{y: "10vh"}}
                     animate={{y: "0vh"}}
                     exit={{y: "10vh"}}
-                    transition={{ duration: .5, ease: 'easeOut'}}
+                    transition={{ delay: 1.5, duration: .5, ease: 'easeOut'}}
                 >
                     <Link className="nav-link" to="/">
                         {t('main.home')}
