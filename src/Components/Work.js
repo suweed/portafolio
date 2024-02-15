@@ -35,9 +35,9 @@ const Work = () => {
                 <motion.div
                     className="option-section"
                     initial={{y: "10vh"}}
-                    animate={{y: "0vh"}}
+                    animate={{y: "-10vh"}}
                     exit={{y: "10vh"}}
-                    transition={{ duration: .5, ease: 'easeOut'}}
+                    transition={{ delay: 1.5, duration: .5, ease: 'easeOut'}}
                 >
                     <Link className="nav-link" to="/about">
                         {t('main.about')}
@@ -46,9 +46,9 @@ const Work = () => {
                 <motion.div
                     className="option-section"
                     initial={{y: "10vh"}}
-                    animate={{y: "0vh"}}
+                    animate={{y: "-10vh"}}
                     exit={{y: "10vh"}}
-                    transition={{ duration: .5, ease: 'easeOut'}}
+                    transition={{ delay: 1.5, duration: .5, ease: 'easeOut'}}
                 >
                     <Link className="nav-link" to="/contact">
                         {t('main.contact')}
